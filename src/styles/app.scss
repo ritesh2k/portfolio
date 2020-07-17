@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  padding: 10px;
+  // margin: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background-color: #fff;
+  border-color: #5b43d6;
+  outline: 0;
+  box-shadow: 0 0 0 1px #5b43d6;
+}
+
+// label {
+//   display: inline;
+// }
+
+button {
+  color: #fff;
+  background-color: #5b43d6;
+  width: 25%;
+  padding: 10px;
+  border-radius: 25px;
+  justify-self: center;
+}
+// scroll-bar styling
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(26, 3, 65, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #57adf5;
+  outline: 1px solid #2e00b3;
+}
+
+// svg styling
+svg:hover{
+  fill: #DA4567;
+}
