@@ -1,10 +1,22 @@
-header {
+.nav {
   padding: 25px;
+  display: flex;
   background-color: #5b43d6;
-  nav {
-    div {
-      display: "flex";
-      justify-content: "flex-end";
-    }
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  & li {
+    list-style: none;
   }
+}
+
+.burger div {
+  background-color: #fff;
+  width: 25px;
+  height: 3px;
+  margin: 3px;
 }

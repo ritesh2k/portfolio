@@ -1,48 +1,27 @@
 import React from "react";
-// import Img from "../../public/images/pro.jpg"
-const propTypes = {};
-
-const defaultProps = {};
 
 const Contact = () => {
   return (
-    <div
-      style={{
-        color: "black",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        padding:"10px"
-      }}
-    >
-      <h1>Get in touch</h1>
-      <form>
-        <div style={{ display: "grid", gap: "10px", padding: "10px" }}>
-          <div>
-            <label htmlFor="name">
-              Name <br />
-              <input type="text" name="name" id="name" />
-            </label>
-            <label htmlFor="email">
-              Email
-              {/* <br /> */}
-              <input type="email" name="email" id="email" />
-            </label>
-          </div>
-          <label htmlFor="message">
-            Message
-            <br />
-            <textarea name="message" id="message" cols="55" rows="10" />
-          </label>
-          <button>Send</button>
+    <>
+      <h1 style={{ width: "fit-content", color:"#000", margin:"auto", padding:"1em" }}>Get in Touch</h1>
+      <form style={{ width: "50%", margin: "auto" }}>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" />
         </div>
+
+        <div>
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <label htmlFor="message">
+          Message
+          <textarea name="message" id="message" cols ="50" rows="10" />
+        </label>
+        <button>Send</button>
       </form>
-    </div>
+    </>
   );
 };
-
-Contact.propTypes = propTypes;
-Contact.defaultProps = defaultProps;
-// #endregion
 
 export default Contact;

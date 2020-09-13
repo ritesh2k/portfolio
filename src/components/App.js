@@ -5,6 +5,7 @@ import SelfDescription from "./SelfDescription.js";
 import VectorDesign from "./VectorDesign.js";
 import CardContainer from "./CardContainer";
 import Contact from "./Contact";
+import Footer from "./Footer"
 
 const App = (props) => (
   <div>
@@ -13,6 +14,7 @@ const App = (props) => (
     <VectorDesign />
     <CardContainer/>
     <Contact/>
+    <Footer/>
   </div>
 );
 

@@ -1,30 +1,32 @@
-import React from "react";
-import Card from "./Card.js";
-import Chevron from "./Chevron";
-const CardContainer = (props) => (
-  <div
-    className="bg-purple"
-    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-  >
-    <Chevron />
-    <Card
-      message={
-        "Integration of eCommerce platforms, payment gateways, custom product templates, and more"
-      }
-    />
-    <Card
-      message={
-        "Integration of eCommerce platforms, payment gateways, custom product templates, and more"
-      }
-    />
-    <Card
-      message={
-        "Integration of eCommerce platforms, payment gateways, custom product templates, and more"
-      }
-    />
-    <Chevron transform={"transform"} />
-  </div>
-);
+import React, { useState } from "react";
+import Card from "./Card";
+import Chevron from "./svgs/Chevron";
+const message =
+  "Integration of eCommerce platforms, payment gateways, custom product templates, and more";
+let cardArr = [message, message, message, message];
+
+const CardContainer = (props) => {
+  const HandleClick = () => {
+    setCurrent(current + 1);
+  };
+  const [current, setCurrent] = useState(0);
+  return (
+    <div
+      className="bg-purple"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Chevron />
+      {cardArr.map((item, index) => (
+        <Card message={item} key={index} />
+      ))}
+      <Chevron transform={"transform"} HandleClick={HandleClick} />
+    </div>
+  );
+};
 
 CardContainer.propTypes = {};
 

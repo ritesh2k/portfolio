@@ -1,6 +1,5 @@
 import React from "react";
-
-const Chevron = ({ transform }) => {
+const Chevron = ({transform, HandleClick}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,6 +10,7 @@ const Chevron = ({ transform }) => {
       height="56"
       viewBox="0 0 444.531 444.531"
       xmlSpace="preserve"
+      onClick={HandleClick}
     >
       <path
         transform={transform ? "scale (-1, 1)" : ""}
