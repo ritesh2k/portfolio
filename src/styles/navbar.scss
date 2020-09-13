@@ -4,6 +4,7 @@
   background-color: #5b43d6;
   justify-content: space-around;
   align-items: center;
+  letter-spacing: 2px;
 }
 nav ul {
   display: flex;
@@ -11,12 +12,34 @@ nav ul {
   width: 30%;
   & li {
     list-style: none;
+    font-weight: 700;
   }
 }
 
-.burger div {
-  background-color: #fff;
-  width: 25px;
-  height: 3px;
-  margin: 3px;
+.burger {
+  display: none;
+  div {
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 15%;
+    right: 0;
+  }
+  .burger {
+    display: block;
+  }
 }
