@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+@import "classes";
+@import "layout.scss";
+
+// Universal Box Sizing with Inheritance
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
   font-family: "open sans", sans-serif;
+  box-sizing: border-box;
   color: white;
 }
 
@@ -13,22 +24,37 @@ $base-color: #5b43d6;
 $dark-pink: #da4567;
 
 form {
-  width: 50%;
+  padding: 1em;
 }
 
 label {
   color: #000;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  background: #fff;
+.contact-div h1 {
+  color: #000;
+  text-align: center;
+  margin-top: 1em;
+}
+
+input {
   border: 1px solid #dadada;
   border-radius: 0.2em;
-  width: 100%;
   padding: 1em;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #dadada;
+  border-radius: 0.2em;
+  resize: vertical;
+  padding: 1em;
+  width: 100%;
   margin: 0.5em 0;
+}
+
+textarea:invalid {
+  border: 2px dashed red;
 }
 
 input[type="text"]:focus,
@@ -44,10 +70,10 @@ button {
   color: #fff;
   font-size: 1em;
   background-color: $base-color;
-  width: 23%;
-  padding: 0.5em;
-  border-radius: 1em;
-  margin: auto;
+  padding: 0.75em 1.7em;
+  border-radius: 2em;
+  cursor: pointer;
+  border: none;
 }
 // scroll-bar styling
 body::-webkit-scrollbar {

@@ -2,25 +2,27 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <>
-      <h1 style={{ width: "fit-content", color:"#000", margin:"auto", padding:"1em" }}>Get in Touch</h1>
-      <form style={{ width: "50%", margin: "auto" }}>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" />
+    <div className="contact-div">
+      <h1>Get in Touch</h1>
+
+      <form>
+        <div className = "wrapper">
+          <div>
+            <label htmlFor="name">Name</label>
+            <input className="" type="text" name="name" id="name" />
+          </div>
+
+          <div>
+            <label htmlFor="email">Email</label>
+            <input className="" type="email" name="email" id="email" />
+          </div>
         </div>
 
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" />
-        </div>
-        <label htmlFor="message">
-          Message
-          <textarea name="message" id="message" cols ="50" rows="10" />
-        </label>
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" rows="5" />
         <button>Send</button>
       </form>
-    </>
+    </div>
   );
 };
 

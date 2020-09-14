@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Card from "./Card";
 import Chevron from "./svgs/Chevron";
 const message =
-  "Integration of eCommerce platforms, payment gateways, custom product templates, and more";
-let cardArr = [message, message, message, message];
+  "Integration of eCommerce platforms, payment gateways";
+let cardArr = [message, message];
 
 const CardContainer = (props) => {
   const HandleClick = () => {

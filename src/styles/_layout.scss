@@ -1,0 +1,15 @@
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  label {
+    margin-bottom: 1.5em;
+  }
+}
