@@ -12,12 +12,8 @@ const CardContainer = (props) => {
   const [current, setCurrent] = useState(0);
   return (
     <div
-      className="bg-purple"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      className="bg-purple card-container"
+      
     >
       <Chevron />
       {cardArr.map((item, index) => (

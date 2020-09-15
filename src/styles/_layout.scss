@@ -13,3 +13,24 @@
     margin-bottom: 1.5em;
   }
 }
+
+// SMALL SCREENS
+@media only screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    top: 8vh;
+    background-color: #5b43d6;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important; //to overside initial nav-links width of 30%
+    height: 25%;
+    transform: translateX(100%);
+  }
+
+  #burger {
+    display: block;
+  }
+}
