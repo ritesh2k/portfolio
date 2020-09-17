@@ -1,25 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
-import Chevron from "./svgs/Chevron";
-const message =
-  "Integration of eCommerce platforms, payment gateways";
-let cardArr = [message, message];
+import ReactIcon from "./svgs/ReactIcon";
+import DesignIcon from "./svgs/DesingIcon";
+import NetworkIcon from "./svgs/NetworkIcon";
+import ToolsIcon from "./svgs/ToolsIcon";
 
-const CardContainer = (props) => {
-  const HandleClick = () => {
-    setCurrent(current + 1);
-  };
-  const [current, setCurrent] = useState(0);
+const CardContainer = () => {
+  const frameWork = "React.js, React-Router, Redux,";
+  const design = "HTML, CSS, JavaScript, Bootstrap .";
+  const network = "HTTP, HTTPS, Cookies, Local Storage.";
+  const css = "Git, Postman, React-Proto, VS Code";
+
   return (
-    <div
-      className="bg-purple card-container"
-      
-    >
-      <Chevron />
-      {cardArr.map((item, index) => (
-        <Card message={item} key={index} />
-      ))}
-      <Chevron transform={"transform"} HandleClick={HandleClick} />
+    <div className="bg-purple card-container">
+      <Card message={frameWork}>
+        <ReactIcon />
+      </Card>
+      <Card message={design}>
+        <DesignIcon />
+      </Card>
+      <Card message={network}>
+        <NetworkIcon />
+      </Card>
+      <Card message={css}>
+        <ToolsIcon />
+      </Card>
     </div>
   );
 };

@@ -1,16 +1,11 @@
 import React from "react";
-import "../styles/selfdescription.scss";
 const SelfDescription = (props) => (
-  <div
-    className="no-margin bg-purple"
-    style={{ display: "flex", padding: "10%" }}
-  >
-    <div>
-      <h1 style={{ margin: "auto" }}>
-        Ritesh Kumar
-        <br /> <span>React Developer</span>
-      </h1>
-      <p>
+  <div className="description-container">
+    <div className="description">
+      <h1>React Developer</h1>
+      <p>I'm a web developer & programmer.</p>
+      <p> I make beatiful web applications using React.</p>
+      <p className="">
         Focused on opening up the wide areas of knowledge in field of Computer
         Science and Information Technology.
       </p>

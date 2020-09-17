@@ -6,7 +6,7 @@
     gap: 1em;
   }
   form {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
   label {
@@ -28,9 +28,21 @@
     width: 100% !important; //to overside initial nav-links width of 30%
     height: 25%;
     transform: translateX(100%);
+    box-shadow: 0 13px 15px #00000029;
   }
 
-  #burger {
-    display: block;
+  .burger {
+    display: block !important;
   }
+  .description {
+    gap: 18px !important;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  form {
+    width: 70%;
+  }
+
+  /* Styles */
 }
