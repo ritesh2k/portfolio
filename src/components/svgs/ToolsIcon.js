@@ -9,7 +9,7 @@ const ToolsIcon = () => {
       x="0px"
       y="0px"
       viewBox="0 0 512 512"
-      style={{ "enable-background": "new 0 0 512 512" }}
+      style={{ "enableBackground": "new 0 0 512 512" }}
       xmlSpace="preserve"
     >
       <circle style={{ fill: "#FFD400" }} cx="256" cy="256" r="256" />

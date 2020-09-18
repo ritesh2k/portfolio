@@ -3,7 +3,7 @@ const DesingIcon = () => {
   return (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 500.238 500.238"
+      enableBackground="new 0 0 500.238 500.238"
       height="512"
       viewBox="0 0 500.238 500.238"
       width="512"

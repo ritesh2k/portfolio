@@ -5,7 +5,7 @@ import Email from "./svgs/Email";
 
 const Footer = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center", padding: "3em" }}>
+    <div className="footer">
       <Email />
       <StackOverFlow />
       <LinkedIn />

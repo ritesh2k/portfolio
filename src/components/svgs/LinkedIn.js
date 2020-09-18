@@ -24,7 +24,7 @@ const linkedIn = () => {
         data-original="#fff"
         className="active-path"
         data-old_color="#fff"
-        // fill="none"
+        fill="#0e76a8 "
       />
     </svg>
   );

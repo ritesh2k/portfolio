@@ -10,6 +10,7 @@
   align-items: center;
   letter-spacing: 2px;
 }
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -34,12 +35,8 @@
 .slide {
   transform: translateX(0%);
   transition: transform 1s ease;
-
   width: 100%;
-  // background-color: red;
   position: absolute;
   height: 266px;
-  // height: 283%;
-  // display: flex;
   top: 10vh;
 }

@@ -5,7 +5,7 @@ const Card = ({ message, icon, children }) => (
     <div>
       {children}
     </div>
-    <p>{message}</p>
+    <p style={{marginTop:"1em"}}>{message}</p>
   </div>
 );
 
