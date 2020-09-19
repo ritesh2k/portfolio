@@ -25,7 +25,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700"
+      rel="stylesheet"
+    />
 
     <title>Ritesh Kumar</title>
   </head>
@@ -42,5 +45,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_KVtevCB3nViUKilSniIlj");
+      })();
+    </script>
   </body>
 </html>

@@ -1,4 +1,5 @@
-.footer{
-    display: flex;
-    justify-content: center;
+.footer {
+  @include displayFlex(row, center);
+//   display: flex;
+//   justify-content: center;
 }
