@@ -5,16 +5,16 @@ import SelfDescription from "./SelfDescription.js";
 import VectorDesign from "./VectorDesign.js";
 import CardContainer from "./CardContainer";
 import Contact from "./Contact";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 const App = (props) => (
   <div>
     <Navbar />
     <SelfDescription />
     <VectorDesign />
-    <CardContainer/>
-    <Contact/>
-    <Footer/>
+    <CardContainer />
+    <Contact />
+    <Footer />
   </div>
 );
 

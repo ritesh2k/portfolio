@@ -37,16 +37,18 @@
   .description {
     gap: 18px !important;
   }
-  .card{
+  .card {
     margin: 2em 1em !important;
     width: 100% !important;
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
   form {
     width: 70%;
   }
 
-  /* Styles */
+  .nav-links {
+    width: 40% !important;
+  }
 }

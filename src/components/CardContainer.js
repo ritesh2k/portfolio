@@ -12,7 +12,7 @@ const CardContainer = () => {
   const css = "Git, Postman, React-Proto, VS Code";
 
   return (
-    <div className="bg-purple card-container">
+    <div className="bg-purple card-container" id ="skills">
       <Card message={frameWork}>
         <ReactIcon />
       </Card>

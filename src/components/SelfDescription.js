@@ -1,6 +1,6 @@
 import React from "react";
 const SelfDescription = (props) => (
-  <div className="description-container">
+  <div className="description-container" id ="description-container">
     <div className="description">
       <h1>React Developer</h1>
       <p>I'm a web developer & programmer.</p>

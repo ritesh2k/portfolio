@@ -12,11 +12,11 @@ const Contact = () => {
 
   // Email JS
   const sendMessage = () =>
-    window.emailjs.send("gmail", "template_vbcsgpz", payload);
+    window.emailjs.send("service_c96637z", "template_vbcsgpz", payload);
 
   return (
-    <div className="contact-div">
-      <h1>Get in Touch</h1>
+    <div className="contact-div" id="contact">
+      <h1>Get in touch</h1>
 
       <form onSubmit={(event) => event.preventDefault()}>
         <div className="wrapper">
