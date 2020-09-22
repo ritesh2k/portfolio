@@ -32,35 +32,6 @@ label {
   color: #000;
 }
 
-.contact-div h1 {
-  color: #000;
-  text-align: center;
-  margin-top: 1em;
-}
-
-input {
-  border: 1px solid #dadada;
-  border-radius: 0.2em;
-  padding: 1em;
-  width: 100%;
-}
-
-textarea {
-  border: 1px solid #dadada;
-  border-radius: 0.2em;
-  resize: vertical;
-  padding: 1em;
-  width: 100%;
-  margin: 0.5em 0;
-}
-
-input:focus,
-input:focus,
-textarea:focus {
-  background-color: #fff;
-  border-color: $base-color;
-  outline: 0;
-}
 
 button {
   display: block;
