@@ -39,13 +39,18 @@ textarea:focus {
   & span {
     width: max-content;
     padding: 0.1em;
-    background-color: #5b43d6;
+    background-color: #577ef5;
     color: white;
     display: none;
+    border-radius: 1em;
+    padding: 0.5em 1em;
   }
 }
 
 img {
   display: block;
   margin: auto;
+}
+small {
+  color: #f00;
 }

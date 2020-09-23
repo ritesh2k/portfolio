@@ -6,6 +6,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [alertMessage, setAlertMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const payload = {
     from_name: email,
@@ -19,7 +20,8 @@ const Contact = () => {
   };
 
   // Email JS
-  const sendMessage = () => {
+  const sendMessage = (event) => {
+    event.preventDefault();
     setLoading(true);
     window.emailjs
       .send("service_c96637z", "template_vbcsgpz", payload)
@@ -51,42 +53,55 @@ const Contact = () => {
       {loading ? (
         <img src={Loading} alt="Loading" />
       ) : (
-        <form onSubmit={(event) => event.preventDefault()}>
+        <form onSubmit={sendMessage}>
           <div className="wrapper">
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name*</label>
               <input
                 className=""
                 type="text"
                 name="name"
                 id="name"
                 value={name}
-                onChange={(event) => setName(event.target.value)}
+                onChange={(event) => {
+                  setError("");
+                  setName(event.target.value);
+                }}
+                required
               />
             </div>
 
             <div>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email*</label>
               <input
                 className=""
                 type="email"
                 name="email"
                 id="email"
                 value={email}
-                onChange={(event) => setEmail(event.target.value)}
+                onChange={(event) => {
+                  setError("");
+                  setEmail(event.target.value);
+                }}
+                required
               />
             </div>
           </div>
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Message*</label>
           <textarea
             name="message"
             id="message"
             rows="5"
             value={message}
-            onChange={(event) => setMessage(event.target.value)}
+            onChange={(event) => {
+              setError("");
+              setMessage(event.target.value);
+            }}
+            required
           />
-          <button onClick={sendMessage}>Send</button>
+          <small>{error}</small>
+          <button>Send</button>
         </form>
       )}
     </div>
