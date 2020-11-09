@@ -1,7 +1,11 @@
 import React from "react";
 const StackOverFlow = () => {
   return (
-    <a href="https://stackoverflow.com/users/12709890/ritesh-kumar">
+    <a
+      href="https://stackoverflow.com/users/12709890/ritesh-kumar"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 120 120"

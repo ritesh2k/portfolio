@@ -8,6 +8,7 @@
 @import "description.scss";
 @import "footer.scss";
 @import "contact.scss";
+@import "project.scss";
 
 $base-color: #5b43d6;
 $dark-pink: #da4567;
@@ -31,7 +32,6 @@ form {
 label {
   color: #000;
 }
-
 
 button {
   display: block;

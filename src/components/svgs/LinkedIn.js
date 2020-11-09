@@ -1,7 +1,11 @@
 import React from "react";
 const linkedIn = () => {
   return (
-    <a href="https://www.linkedin.com/in/ritesh-kumar-460155191/">
+    <a
+      href="https://www.linkedin.com/in/ritesh-kumar-460155191/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"

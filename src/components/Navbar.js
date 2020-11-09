@@ -9,15 +9,25 @@ const Navbar = (props) => {
     setDisplay(slide ? "" : "slide");
   }
   return (
-    <nav className="nav" id ="nav-bar">
-      <Link to="description-container" offset ={-100} smooth={true} duration={700}>
+    <nav className="nav" id="nav-bar">
+      <Link
+        to="description-container"
+        offset={-100}
+        smooth={true}
+        duration={700}
+      >
         <h3>Ritesh Kumar</h3>
       </Link>
       <ul className={`nav-links ${slide}`}>
         <Link to="skills" smooth={true} duration={700}>
           <p>Skills</p>
         </Link>
-        <p>Projects</p>
+        <Link to="project"
+        offset={-70}
+        
+        smooth={true} duration={700}>
+          <p>Projects</p>
+        </Link>
         <Link to="contact" smooth={true} duration={700}>
           <p>Contact</p>
         </Link>

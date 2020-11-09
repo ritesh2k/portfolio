@@ -1,0 +1,20 @@
+.project-container {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: #137FE4;
+  // background-image: linear-gradient(180deg, #575ff5, #5b43d6);
+}
+.svg-container {
+  flex-basis: 100%;
+  text-align: center;
+  flex-grow: 1;
+  // border: 1px solid black;
+}
+.desc-container {
+  margin: 1em;
+  text-align: center;
+  flex-basis: 100%;
+  // border: 1px solid black;
+}
