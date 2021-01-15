@@ -10,7 +10,7 @@
 @import "contact.scss";
 @import "project.scss";
 
-$base-color: #5b43d6;
+$base-color: #0A33AE;
 $dark-pink: #da4567;
 
 * {
@@ -23,6 +23,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: larger;
   color: white;
+  background-color: #ECF0FE
 }
 
 form {

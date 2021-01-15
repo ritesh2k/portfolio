@@ -7,8 +7,8 @@ import ToolsIcon from "./svgs/ToolsIcon";
 
 const CardContainer = () => {
   const frameWork = "React.js, React-Router, Redux,";
-  const design = "HTML, CSS, JavaScript, Bootstrap .";
-  const network = "HTTP, HTTPS, Cookies, Local Storage.";
+  const design = "HTML, CSS, Material UI, Bootstrap .";
+  const network = "HTTPS, JWT, Cookies, Local Storage.";
   const css = "Git, Postman, React-Proto, VS Code";
 
   return (

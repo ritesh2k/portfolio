@@ -1,41 +1,9 @@
 .base-color{
-  background-color: #5b43d6;
+  background-color: #0A33AE;
 }
-
 
 .text-center {
   text-align: center;
 }
-.d-flex {
-  display: flex;
-  &.d-column {
-    flex-direction: column;
-  }
-  &.d-row {
-    flex-direction: row;
-  }
-  &.item-center {
-    align-items: center;
-  }
-}
-.d-grid {
-  display: grid;
-}
-.black {
-  color: #000;
-}
 
-.m-1 {
-  margin: 1em;
-}
-m-2 {
-  margin: 2em;
-}
-
-.p-2 {
-  padding: 2em;
-}
-
-.mx-2 {
-  margin: 0 1em;  
-}
+//todo :: add more custom classes
