@@ -4,7 +4,7 @@ const SelfDescription = (props) => (
     <div className="description">
       <h1>React Developer</h1>
       <p>I'm a web developer & programmer.</p>
-      <p> I make beatiful web applications using React.</p>
+      <p> I make beautiful web applications using React.</p>
       <p className="">
         Focused on opening up the wide areas of knowledge in field of Computer
         Science and Information Technology.
