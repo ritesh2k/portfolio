@@ -25,3 +25,6 @@ yarn-error.log*
 # keys
 ritesh2k
 ritesh2k.pub
+
+#settings
+/.vscode

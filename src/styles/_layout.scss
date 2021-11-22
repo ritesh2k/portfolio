@@ -48,6 +48,22 @@
     height: 156px;
     width: 156px;
   }
+  .asteroid-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    padding: 2em;
+    & img {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 0.5em;
+    }
+    & p {
+      word-spacing: 120%;
+      text-align: justify;
+    }
+}
+
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
