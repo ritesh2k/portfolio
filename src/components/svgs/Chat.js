@@ -8,7 +8,7 @@ const Chat = () => {
     >
       <svg
         id="chat_svg"
-        enable-background="new 0 0 512.01 512.01"
+        enableBackground="new 0 0 512.01 512.01"
         height="256"
         viewBox="0 0 512.01 512.01"
         width="256"

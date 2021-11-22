@@ -31,6 +31,9 @@ const Navbar = (props) => {
         <Link to="contact" smooth={true} duration={700}>
           <p>Contact</p>
         </Link>
+        <Link to="asteroid-info" smooth={true} duration={700}>
+          <p>Feeling Lucky?</p>
+        </Link>
       </ul>
       <div className={`burger`} id="burger" onClick={handleClick}>
         <div></div>
