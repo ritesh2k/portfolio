@@ -1,36 +1,46 @@
-import React, { useState, useEffect } from 'react'
-import { useForm, ValidationError } from '@formspree/react'
+import { useState, useEffect } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
-import Loading from './svgs/Loading.gif'
+import Loading from './svgs/Loading.gif';
 const Contact = () => {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-    const [alertMessage, setAlertMessage] = useState('')
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState('')
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [alertMessage, setAlertMessage] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
-    const [state, handleSubmit] = useForm('mpzbapqv')
+    const [state, handleSubmit] = useForm('mpzbapqv');
 
     const HandleFormReset = () => {
-        setName('')
-        setEmail('')
-        setMessage('')
-    }
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
 
     useEffect(() => {
         if (state.succeeded) {
-            setLoading(false)
-            HandleFormReset()
-            setAlertMessage('Email successfully sent. x')
-            document.querySelector('.alert-span').style.display = 'block'
+            setLoading(false);
+            HandleFormReset();
+            setAlertMessage('Email successfully sent. x');
+            const spanEl = document.querySelector('.alert-span') as HTMLSpanElement | null;
+            if (spanEl) {
+                spanEl.style.display = 'block';
+            }
         }
-    }, [state.succeeded])
+    }, [state.succeeded]);
     return (
         <div className='contact-div' id='contact'>
             <h1>Get in touch</h1>
             <div className='alert'>
-                <span className='alert-span' onClick={() => (document.querySelector('.alert-span').style.display = 'none')}>
+                <span
+                    className='alert-span'
+                    onClick={() => {
+                        const spanEl = document.querySelector('.alert-span') as HTMLSpanElement | null;
+                        if (spanEl) {
+                            spanEl.style.display = 'none';
+                        }
+                    }}>
                     {alertMessage}
                 </span>
             </div>
@@ -47,9 +57,9 @@ const Contact = () => {
                                 name='name'
                                 id='full-name'
                                 value={name}
-                                onChange={(event) => {
-                                    setError('')
-                                    setName(event.target.value)
+                                onChange={event => {
+                                    setError('');
+                                    setName(event.target.value);
                                 }}
                                 required
                             />
@@ -63,9 +73,9 @@ const Contact = () => {
                                 name='email'
                                 id='email'
                                 value={email}
-                                onChange={(event) => {
-                                    setError('')
-                                    setEmail(event.target.value)
+                                onChange={event => {
+                                    setError('');
+                                    setEmail(event.target.value);
                                 }}
                                 required
                             />
@@ -77,11 +87,11 @@ const Contact = () => {
                     <textarea
                         name='message'
                         id='message'
-                        rows='5'
+                        rows={5}
                         value={message}
-                        onChange={(event) => {
-                            setError('')
-                            setMessage(event.target.value)
+                        onChange={event => {
+                            setError('');
+                            setMessage(event.target.value);
                         }}
                         required
                     />
@@ -91,7 +101,7 @@ const Contact = () => {
                 </form>
             )}
         </div>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;
