@@ -2,6 +2,7 @@
     "name": "portfolio",
     "version": "1.0.0",
     "private": true,
+    "homepage": "/portfolio",
     "dependencies": {
         "@formspree/react": "^2.2.4",
         "@types/jest": "^30.0.0",
@@ -27,7 +28,6 @@
     "eslintConfig": {
         "extends": "react-app"
     },
-    "homepage": "https://ritesh2k.github.io/portfolio",
     "browserslist": {
         "production": [
             ">0.2%",
