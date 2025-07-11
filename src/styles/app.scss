@@ -1,60 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import "mixins.scss";
-@import "navbar.scss";
-@import "classes";
-@import "card.scss";
-@import "transitions.scss";
-@import "description.scss";
-@import "footer.scss";
-@import "contact.scss";
-@import "project.scss";
-@import "asteroid.scss";
-@import "layout.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'classes';
+@import 'card.scss';
+@import 'transitions.scss';
+@import 'description.scss';
+@import 'footer.scss';
+@import 'contact.scss';
+@import 'project.scss';
+@import 'asteroid.scss';
+@import 'layout.scss';
 
-$base-color: #0A33AE;
+$base-color: #0a33ae;
 $dark-pink: #da4567;
 
 * {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: larger;
-  color: white;
-  background-color: #ECF0FE
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    color: white;
+    background-color: #ecf0fe;
 }
 
 form {
-  padding: 1em;
+    padding: 1em;
 }
 
 label {
-  color: #000;
+    color: #000;
 }
 
 button {
-  display: block;
-  color: #fff;
-  font-size: 1em;
-  background-color: $base-color;
-  padding: 0.75em 1.5em;
-  border-radius: 2em;
-  cursor: pointer;
-  margin: 0 auto;
-  border: none;
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    background-color: $base-color;
+    padding: 0.75em 1.5em;
+    border-radius: 2em;
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
 }
 
 button:hover {
-  color: #000;
-  background-color: #57adf5;
-  transition: background-color 2s ease-out;
+    color: #000;
+    background-color: #57adf5;
+    transition: background-color 2s ease-out;
 }
 
 // svg styling
 svg:hover {
-  fill: $dark-pink !important;
-  transition: fill 1s ease-out;
+    fill: $dark-pink !important;
+    transition: fill 1s ease-out;
 }
