@@ -19,10 +19,10 @@ export const Asteroid = () => {
     return (
         <div className='asteroid-container' id='asteroid-info'>
             {asteroidInfo.url ? (
-                <>
+                <figure>
                     <img src={asteroidInfo?.url} alt='asteroid of the day' />
-                    <p>{asteroidInfo?.explanation}</p>
-                </>
+                    <figcaption>{asteroidInfo?.explanation}</figcaption>
+                </figure>
             ) : null}
         </div>
     );
